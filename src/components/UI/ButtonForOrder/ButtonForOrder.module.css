@@ -1,0 +1,33 @@
+.ButtonForOrder {
+
+ position:relative;
+  margin-top: 20px;
+  margin-right: 108px;
+  margin-left: 50px;
+  align-self: baseline;
+  width: 24px;
+  height: 26px;
+  background-color: white;
+}
+.qualityOfOrder{
+position: absolute;
+font-family: "PT Sans";
+left:25px;
+top:1px;
+margin-left:-5px;
+margin-top:-5px;
+color:white;
+font-size: 8px;
+font-weight: 700;
+}
+.imgButtonForOrder{
+  width: 24px;
+  height: 26px;
+  
+
+}
+.cicle{
+ position: absolute;
+left:16px;
+top:-4px;
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App {
+  
+  max-width: 1440px;
+  max-height: 1070px;
+}
+.Allcontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 1104px;
+  margin-right: 88px;
+  margin-left: 248px;
+  margin-top: -150px;
+  margin-bottom: 66px;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  min-width:300px;
+  border-radius: 2%;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Logo {
+  margin-top: 18px;
+  margin-left: 88px;
+  align-self: baseline;
+}
+.Filter {
+  font-family: "PT Sans";
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+  margin-right: 137px;
+  margin-bottom: 0px;
+  margin-left: 88px;
+}
+.Menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 88px;
+  font-family: "PT Sans";
+  margin-bottom: 0px;
+  margin-top: 24px;
+  margin-right: 40px;
+  margin-left: 88px;
+  width: 100px;
+}
+.TitleOfMenu {
+  font-weight: 700;
+  font-size: 32px;
+  color: #1f1f1f;
+  font-style: normal;
+  align-self: baseline;
+}
+.ChapterOfMenu {
+  margin-bottom: 16px;
+  color: grey;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 1px;
+  font-size: 16px;
+}
+.ActiveChapterOfMenu {
+  color: black;
+  border-bottom: solid;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  width: 75px;
+  border-width: 1px;
+  border-color: grey;
+}
+.NothingOrder{
+  font-family: "PT Sans";
+  margin-left:48px;
+ 
+}
+.TitleNothingOrder{
+  font-size: 32px;
+  font-weight: 700;
+  margin-top:24px;
+
+}
+.AttenrionNothingOrder{
+  font-size: 22px;
+  margin-top:24px;
+  max-width:364px;
+}
+.ContetnForOrder{
+display: flex;
+flex-wrap: wrap;
+width:364px;
+height:120px;
+margin-top:16px;
+margin-bottom:32px;
+margin-left: 48px;
+margin-right: 48px;
+}
+.InfoAboutClient{
+width:364px;
+height:50px;
+border-radius:2%;
+border-style: none;
+font-size: 16px;
+background-color: #F8F8F8;
+margin-top: 16px;
+margin-bottom: 16px;
+border-radius:7%;
+color:#959DAD;
+padding-top:14px;
+padding-bottom:14px;
+padding-left:14px;
+
+}
+.FullInfoAboutClient{
+  font-size: 18px;
+  margin-top:32px;
+  margin-bottom:16px;
+  color:#59606D;
+  
+
+}
+.FullInfoAboutThingOrder{
+  color:#59606D;
+  font-size: 18px;
+  margin-top:24px;
+  width:364px;
+  height:23px;
+  margin-top:24px;
+  margin-bottom:16px;
+
+}
+
+
+/* mobile */
+@media (max-width: 828px) {
+  .Allcontent {
+    width: 828px;
+  }
+}
+@media (max-width: 600px) {
+  .Allcontent {
+    width: 552px;
+  }
+}

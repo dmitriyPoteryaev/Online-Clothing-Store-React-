@@ -1,0 +1,27 @@
+.modalForOrder {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.5);
+  left:0px ;
+  right:0;
+  top:0;
+  bottom:0;
+  display: none;
+  font-family: "PT Sans", sans-serif;
+}
+
+.contentOfModal {
+  display: flex;
+  width:460px;
+  background:white;
+  min-height:1077px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+  
+}
+
+.modalForOrder.active {
+ 
+    display: flex;  
+    justify-content: end;
+    margin: 0;
+    
+}
