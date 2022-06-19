@@ -705,6 +705,13 @@ function App() {
 
   }
 
+  const createNewOrder=(first,second,third)=>{
+   
+
+    console.log( first,second,third)
+
+  }
+
 
   return (
     <div className="App">
@@ -786,27 +793,33 @@ function App() {
                 <input type='text'
                  placeholder="Ваше имя"
                   className="InfoAboutClient"
-                  onChange={(event)=>setinputForName(event.targetvalue)}
+                  onChange={(event)=>setinputForName(event.target.value)}
                   >
                   </input>
                 <input type='text'
                 placeholder="Телефон"
                 className="InfoAboutClient"
-                onChange={(event)=>setinputForPhone(event.targetvalue)}
+                onChange={(event)=>setinputForPhone(event.target.value)}
                 >
 
                   </input>
                 <input type='text'
                  placeholder="Адрес" 
                  className="InfoAboutClient"
-                 onChange={(event)=>setinputForAdress(event.targetvalue)}
+                 onChange={(event)=>setinputForAdress(event.target.value)}
                  >
 
                  </input>
               </form>
  <ButtonForBackOrSendOrder 
- 
- 
+ create={createNewOrder}
+//  
+ quantityThingForOrder2={positionForOrder.length}
+ visiable1={visiableOfModal}
+// 
+ name={inputForName}
+ phone={inputForPhone}
+ adress={inputForAdress}
  >
   Отправить
   </ButtonForBackOrSendOrder>
