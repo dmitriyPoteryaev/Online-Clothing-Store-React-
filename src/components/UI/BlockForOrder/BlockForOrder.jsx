@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './BlockForOrder.module.css';
-import starForRaiting from '../../starForRaiting.png';
-import trash from '../../trash.png';
-import blacktrash from '../../blacktrash.png';
+import starForRaiting from '../../../assets/starForRaiting.png';
+import trash from '../../../assets/trash.png';
+import blacktrash from '../../../assets/blacktrash.png';
 
 
 const BlockForOrder = (props) => {
@@ -13,7 +13,7 @@ const BlockForOrder = (props) => {
         <p className={classes.raiting}>{props.value.rating}</p>
         <p className={classes.NameOfBackpack}> {props.value.NameOfBackpack}</p>
         <p className={classes.Price}>{props.value.Price_rub} 000 ₽</p>
-        <img src={props.value.img_backpack}  className={classes.content_picture}  alt={'PictureOfBackpack'}/>
+        <img src={`./${props.value.img_content}.png`}  className={classes.content_picture}  alt={'PictureOfSomethinContent'}/>
         <img src={starForRaiting}  className={classes.img_starForRaiting}  alt={'PictureForRaiting'}/>
         <img
          src={trash} 

@@ -96,10 +96,7 @@
   max-width:364px;
 }
 .ContetnForOrder{
-display: flex;
-flex-wrap: wrap;
 width:364px;
-height:120px;
 margin-top:16px;
 margin-bottom:32px;
 margin-left: 48px;
@@ -139,6 +136,31 @@ padding-left:14px;
   margin-bottom:16px;
 
 }
+.Loader{
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 3px dashed black;
+  animation: rotate 1s infinite linear;
+ margin:auto;
+  margin-top: 200px ;
+  
+  }
+  
+  @keyframes rotate{
+  
+  
+      from{
+  
+  transform: rotate(0deg) scale(1);
+      }
+      to{
+  
+          transform: rotate(360deg) scale(1.5);
+      }
+  
+  }
 
 
 /* mobile */

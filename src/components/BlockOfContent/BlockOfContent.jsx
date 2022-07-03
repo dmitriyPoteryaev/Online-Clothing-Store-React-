@@ -1,22 +1,34 @@
 import React from 'react';
 import classes from './BlockOfContent.module.css';
-import PitureButtonForOrder from '../PitureButtonForOrder.png';
-import blackButtonForOrder from '../blackButtonForOrder.png';
-import starForRaiting from '../starForRaiting.png';
+import PitureButtonForOrder from '../../assets/PitureButtonForOrder.png';
+import blackButtonForOrder from '../../assets/blackButtonForOrder.png';
+import starForRaiting from '../../assets/starForRaiting.png';
 
 
-const BlockOfContent = (props) => {
+const BlockOfContent = ({value,key,addThingForOrder,quantityThingForOrder1}) => {
+
+
+    const {NameOfBackpack,Price_rub,id,img_content,img_starForRaiting,rating} = value;
+  
     return (
         <div className={classes.blockForContent}>
-            <p className={classes.raiting}>{props.value.rating}</p>
-            <p className={classes.NameOfBackpack}> {props.value.NameOfBackpack}</p>
-            <p className={classes.Price}>{props.value.Price_rub} 000 ₽</p>
-            <img src={props.value.img_backpack}  className={classes.content_picture}  alt={'PictureOfSomethinContent'}/>
+            <p className={classes.raiting}>{rating}</p>
+            <p className={classes.NameOfBackpack}> {NameOfBackpack}</p>
+            <p className={classes.Price}>{Price_rub} 000 ₽</p>
+            <img src={`./${img_content}.png`} className={classes.content_picture}  alt={'PictureOfSomethinContent'}/>
             <img 
             src={PitureButtonForOrder} 
              className={classes.ForOrder} 
               alt={'PitureButtonForOrder'} 
-              onClick={()=>{props.addThingForOrder([props.value,...props.quantityThingForOrder1])}}
+              onClick={()=>{addThingForOrder([...quantityThingForOrder1,
+                
+                
+            {NameOfBackpack
+            ,Price_rub,
+            id:Date.now(),
+            img_content,
+            img_starForRaiting,
+            rating}])}}
               onMouseOver={(event)=>(event.currentTarget.src = blackButtonForOrder)}
               onMouseOut={(event)=>(event.currentTarget.src = PitureButtonForOrder)}
               />

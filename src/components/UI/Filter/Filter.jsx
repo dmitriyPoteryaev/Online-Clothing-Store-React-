@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './Filter.module.css';
-const Select = ({defaultName,options,value,functionChangeOfValue}) => {
+const Select = ({defaultName,options,filterSelector,setfilterSelector}) => {
     return (
         <select 
         className={classes.select}
-        value={value}
-        onChange={(event)=>functionChangeOfValue(event.target.value)}
+        value={filterSelector}
+        onChange={(event)=>setfilterSelector(event.target.value)}
 
     
         >
