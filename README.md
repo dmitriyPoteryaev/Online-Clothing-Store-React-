@@ -1,5 +1,5 @@
 # 
-Online-Clothing-Store
+Online-Clothing-Store(React)
 
 ## Как запустить проект
 - `npm install` - устанавливаем зависимости
