@@ -1,0 +1,14 @@
+.Attention_hide{
+    display: none;
+    margin-top: 32px;
+    justify-content: center;
+    
+    }
+
+    .Attention_vis{
+        display: flex;
+        margin-top: 32px;
+        justify-content: center;
+        
+        }
+    

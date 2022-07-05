@@ -6,6 +6,7 @@ const ModalForOrder = ({
   visiable,
   funcForModal2,
   quantityThingForOrder,
+  setGoodBye
 }) => {
   const StyleModal = [classes.modalForOrder];
   console.log(quantityThingForOrder);
@@ -15,7 +16,9 @@ const ModalForOrder = ({
   }
 
   return (
-    <div className={StyleModal.join(" ")} onClick={() => funcForModal2(false)}>
+    <div className={StyleModal.join(" ")}
+     onClick={() => {funcForModal2(false);setGoodBye(true)}}>
+      
       <div
         className={classes.contentOfModal}
         onClick={(event) => event.stopPropagation()}

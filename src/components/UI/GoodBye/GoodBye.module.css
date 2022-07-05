@@ -1,0 +1,43 @@
+.successful {
+
+
+    width: 364px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+
+
+
+.ok {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 366px;
+}
+
+.HeaderOfModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.TitleNothingOrder {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 24px;
+
+}
+
+.cross {
+
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+
+}

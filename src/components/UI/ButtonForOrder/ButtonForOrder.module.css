@@ -8,18 +8,9 @@
   width: 24px;
   height: 26px;
   background-color: white;
+  cursor:pointer;
 }
-.qualityOfOrder{
-position: absolute;
-font-family: "PT Sans";
-left:25px;
-top:1px;
-margin-left:-5px;
-margin-top:-5px;
-color:white;
-font-size: 8px;
-font-weight: 700;
-}
+
 .imgButtonForOrder{
   width: 24px;
   height: 26px;
@@ -28,6 +19,20 @@ font-weight: 700;
 }
 .cicle{
  position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items:center;
+ width:12px;
+ height:12px;
+ border-radius:50%;
+background-color:#959DAD;
 left:16px;
 top:-4px;
 }
+.qualityOfOrder{
+  font-family: "PT Sans";
+  text-align: center;
+  color:white;
+  font-size: 8px;
+  font-weight: 700;
+  }

@@ -11,7 +11,7 @@ const BlockForOrder = (props) => {
     return (
         <div className={classes.blockForContent}>
         <p className={classes.raiting}>{props.value.rating}</p>
-        <p className={classes.NameOfBackpack}> {props.value.NameOfBackpack}</p>
+        <p className={classes.TitleOfThing}> {props.value.TitleOfThing}</p>
         <p className={classes.Price}>{props.value.Price_rub} 000 ₽</p>
         <img src={`./${props.value.img_content}.png`}  className={classes.content_picture}  alt={'PictureOfSomethinContent'}/>
         <img src={starForRaiting}  className={classes.img_starForRaiting}  alt={'PictureForRaiting'}/>

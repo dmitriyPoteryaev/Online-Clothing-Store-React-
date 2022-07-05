@@ -5,7 +5,7 @@ import { useState } from "react"
 export const useFetching=(callback,CurrentchaptersOfMenu)=>{
 
 const [isLoading,setIsLoading] = useState(false)
-const [error,setError] = useState(false)
+const [error,setError] = useState('')
 
 const fetch= async ()=>{
 
@@ -17,7 +17,7 @@ try{
 }
 catch(e){
 
-    setError(e.massage)
+    setError(e.message)
 
 }
 finally{

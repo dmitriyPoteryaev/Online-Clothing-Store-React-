@@ -66,6 +66,7 @@
   font-size: 16px;
   padding: 1px;
   font-size: 16px;
+  cursor: pointer;
 }
 .ActiveChapterOfMenu {
   color: black;
@@ -78,6 +79,7 @@
   width: 75px;
   border-width: 1px;
   border-color: grey;
+  cursor: pointer;
 }
 .NothingOrder{
   font-family: "PT Sans";
@@ -105,14 +107,13 @@ margin-right: 48px;
 .InfoAboutClient{
 width:364px;
 height:50px;
-border-radius:2%;
+border-radius:5px;
 border-style: none;
 font-size: 16px;
 background-color: #F8F8F8;
 margin-top: 16px;
 margin-bottom: 16px;
-border-radius:7%;
-color:#959DAD;
+color:black;
 padding-top:14px;
 padding-bottom:14px;
 padding-left:14px;
@@ -136,31 +137,25 @@ padding-left:14px;
   margin-bottom:16px;
 
 }
-.Loader{
-  
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  border: 3px dashed black;
-  animation: rotate 1s infinite linear;
- margin:auto;
-  margin-top: 200px ;
-  
-  }
-  
-  @keyframes rotate{
-  
-  
-      from{
-  
-  transform: rotate(0deg) scale(1);
-      }
-      to{
-  
-          transform: rotate(360deg) scale(1.5);
-      }
-  
-  }
+.Error{
+
+
+  text-align: center;
+  margin-top: 200px;
+}
+.HeaderOfModal{
+display: flex;
+justify-content:space-between;
+align-items: baseline;
+
+}
+.cross{
+
+width: 14px;
+height: 14px;
+cursor: pointer;
+
+}
 
 
 /* mobile */

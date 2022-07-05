@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
   }
-  .NameOfBackpack {
+  .TitleOfThing {
     position: absolute;
     top: 12px;
     left: 130px;
@@ -58,6 +58,7 @@
     bottom: 49px;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 
   }
   
