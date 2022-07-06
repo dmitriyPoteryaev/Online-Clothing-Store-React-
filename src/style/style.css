@@ -157,6 +157,34 @@ cursor: pointer;
 
 }
 
+.About{
+display:flex;
+justify-content: center;
+align-items: center;
+min-width:100vh;
+min-height:100vh;
+
+}
+.navbar{
+
+height: 100px;
+width: 100vw;
+display: flex;
+align-items:center;
+padding: 0 15px;
+background: lightgray;
+
+}
+.navbar__links{
+
+margin-left: auto;
+display: flex;
+flex-wrap: wrap;
+width:200px;
+
+
+}
+
 
 /* mobile */
 @media (max-width: 828px) {

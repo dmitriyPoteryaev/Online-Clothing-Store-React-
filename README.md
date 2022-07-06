@@ -3,7 +3,8 @@ Online-Clothing-Store(React)
 
 ## Как запустить проект
 - `npm install` - устанавливаем зависимости
-- `npm run start` - запускает  фронт на 3000 порту
+- `npx json-sevrer src/AllAboutProduct.json` - запускаем back на 3000 порту
+- `npm run start` - запускает  фронт на 3001 порту
 
 
 

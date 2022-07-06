@@ -7,6 +7,8 @@ export   class  ContentServies{
 static async GetQuery  (ind) {
      const response = await axios.get(` http://localhost:3000/${ind}`);
 
+  
+
     return [...response.data];
 }
 

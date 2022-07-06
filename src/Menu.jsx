@@ -1,6 +1,21 @@
 import React from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom"
+
+import { useParams } from "react-router-dom"
 
 const Menu = ({ CurrentchaptersOfMenu, setchapterOfMenu }) => {
+
+
+
+
+ 
+
+ 
+
+  
+  
+
   const chaptersOfMenu = [
     {
       name: "Рюкзаки",
@@ -23,7 +38,7 @@ const Menu = ({ CurrentchaptersOfMenu, setchapterOfMenu }) => {
           <div
             className="ActiveChapterOfMenu"
             key={chapter.name}
-            onClick={() => setchapterOfMenu(chapter.identifier)}
+            onClick={() => {setchapterOfMenu(chapter.identifier)}}
           >
             {chapter.name}
           </div>
@@ -31,7 +46,7 @@ const Menu = ({ CurrentchaptersOfMenu, setchapterOfMenu }) => {
           <div
             className="ChapterOfMenu"
             key={chapter.name}
-            onClick={() => setchapterOfMenu(chapter.identifier)}
+            onClick={() => {setchapterOfMenu(chapter.identifier)}}
           >
             {chapter.name}
           </div>
