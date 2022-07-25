@@ -630,59 +630,7 @@
     }
   ],
   "requests": [
-    {
-      "order": {
-        "Name": "Ольга Потеряева",
-        "Phone": "+73 43 242-34-32",
-        "Adress": "Ключевая ,дом 9а",
-        "id": 1657046937598,
-        "ThingForOrderForm": [
-          {
-            "TitleOfThing": "Рубашка Louis Vuitton Discovery",
-            "Price_rub": 50,
-            "id": 1657046907109,
-            "img_content": "shirts",
-            "img_starForRaiting": "starForRaiting",
-            "rating": 4.6
-          },
-          {
-            "TitleOfThing": "Кожаная куртка Louis Vuitton Discovery",
-            "Price_rub": 50,
-            "id": 1657046909353,
-            "img_content": "leatherJacket",
-            "img_starForRaiting": "starForRaiting",
-            "rating": 4.6
-          },
-          {
-            "TitleOfThing": "Рюкзак Louis Vuitton Discovery",
-            "Price_rub": 151,
-            "id": 1657046911573,
-            "img_content": "backpack",
-            "img_starForRaiting": "starForRaiting",
-            "rating": 4.6
-          }
-        ]
-      },
-      "id": 1
-    },
-    {
-      "order": {
-        "Name": "ewfewf",
-        "Phone": "+73 24 245-32-42",
-        "Adress": "wefewf",
-        "id": 1657048136328,
-        "ThingForOrderForm": [
-          {
-            "TitleOfThing": "Рюкзак Louis Vuitton Discovery",
-            "Price_rub": 151,
-            "id": 1657048130605,
-            "img_content": "backpack",
-            "img_starForRaiting": "starForRaiting",
-            "rating": 4.2
-          }
-        ]
-      },
-      "id": 2
-    }
+    
+   
   ]
 }

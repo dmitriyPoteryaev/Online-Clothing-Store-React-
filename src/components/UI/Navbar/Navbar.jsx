@@ -11,7 +11,8 @@ const Navbar = () => {
         <div className="navbar">
         <div className="navbar__links">
           <Link to="/about">О сайте </Link>
-          <a href='/louis_Vuitton/Backpacks'> Перейти на сайт магазина</a>
+          <Link to="/louis_Vuitton/Backpacks">Перейти на сайт магазина </Link>
+          
         </div>
       </div>
     );
