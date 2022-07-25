@@ -1,8 +1,8 @@
 {
   "name": "backpacks",
   "version": "0.1.0",
-  "homepage": "https://ydjw.github.io/Online-Clothing-Store-React",
   "private": true,
+  "homepage": "https://dmitriypoteryaev.github.io/Online-Clothing-Store-React-/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -24,7 +24,7 @@
     "build:backend": "npm run backend && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build:backend",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

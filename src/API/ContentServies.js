@@ -10,7 +10,7 @@ export   class  ContentServies{
 // ранее здесь был локальный url .За счёт этого фронт куртился на локальному порту через json-server
     
 static async GetQuery  (ind) {
-     const response = await axios.get('https://dmitriypoteryaev.github.io/db/db.json');
+     const response = await axios.get('https://dmitriypoteryaev.github.io/db.db/db.json');
      console.log(response)
      let responseEnd =await response.data[ind];
      console.log(response)
