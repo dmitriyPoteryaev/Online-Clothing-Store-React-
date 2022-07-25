@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Online-Clothing-Store-React/static/css/main.1bdd82da.css",
-    "main.js": "/Online-Clothing-Store-React/static/js/main.179553b1.js",
-    "static/media/backpack.png": "/Online-Clothing-Store-React/static/media/backpack.1bdb743fe9ecec3cfe7f.png",
-    "index.html": "/Online-Clothing-Store-React/index.html",
-    "main.1bdd82da.css.map": "/Online-Clothing-Store-React/static/css/main.1bdd82da.css.map",
-    "main.179553b1.js.map": "/Online-Clothing-Store-React/static/js/main.179553b1.js.map"
+    "main.css": "/Online-Clothing-Store-React-/static/css/main.1bdd82da.css",
+    "main.js": "/Online-Clothing-Store-React-/static/js/main.08c0e8ff.js",
+    "static/media/backpack.png": "/Online-Clothing-Store-React-/static/media/backpack.1bdb743fe9ecec3cfe7f.png",
+    "index.html": "/Online-Clothing-Store-React-/index.html",
+    "main.1bdd82da.css.map": "/Online-Clothing-Store-React-/static/css/main.1bdd82da.css.map",
+    "main.08c0e8ff.js.map": "/Online-Clothing-Store-React-/static/js/main.08c0e8ff.js.map"
   },
   "entrypoints": [
     "static/css/main.1bdd82da.css",
-    "static/js/main.179553b1.js"
+    "static/js/main.08c0e8ff.js"
   ]
 }
