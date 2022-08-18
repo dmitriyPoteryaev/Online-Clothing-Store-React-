@@ -1,4 +1,4 @@
-.blockForContent{
+.blockForContent {
   width: calc(25% - 12px);
   height: 272px;
   padding: 10px;
@@ -8,6 +8,7 @@
   font-family: "PT Sans", sans-serif;
   border-radius: 5%;
 }
+
 .raiting {
   position: absolute;
   top: 20px;
@@ -18,6 +19,7 @@
   margin: 0;
   padding: 0;
 }
+
 .TitleOfThing {
   position: absolute;
   bottom: 40px;
@@ -28,12 +30,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .Price {
   position: absolute;
   bottom: 16px;
   left: 16px;
   font-weight: 700;
 }
+
 .content_picture {
   position: absolute;
   left: 61px;
@@ -41,6 +45,7 @@
   width: 142px;
   height: 180px;
 }
+
 .img_starForRaiting {
   position: absolute;
   left: 15px;
@@ -48,6 +53,7 @@
   margin: 0;
   padding: 0;
 }
+
 .ForOrder {
   position: absolute;
   right: 18px;
@@ -61,13 +67,37 @@
 
 /* mobile */
 
-@media (max-width: 828px) {
+@media (max-width: 1900px) {
   .blockForContent {
     width: calc(33% - 12px);
   }
 }
-@media (max-width: 600px) {
+
+
+@media (max-width: 1600px) {
   .blockForContent {
-    width: calc(50% - 12px);
+    width: calc(40% - 12px);
+  }
+
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .blockForContent {
+    width: calc(55% - 12px);
   }
 }
+
+@media (min-width: 550px) and (max-width: 900px) {
+  .blockForContent {
+    width: calc(90% - 12px);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 550px) {
+  .blockForContent {
+    width: 100%;
+    margin: 0px;
+
+  }
+}
+

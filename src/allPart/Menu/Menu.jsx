@@ -1,21 +1,7 @@
 import React from "react";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom"
-
-import { useParams } from "react-router-dom"
+import classes from './Menu.module.css';
 
 const Menu = ({ CurrentchaptersOfMenu, setchapterOfMenu }) => {
-
-
-
-
- 
-
- 
-
-  
-  
-
   const chaptersOfMenu = [
     {
       name: "Рюкзаки",
@@ -32,21 +18,25 @@ const Menu = ({ CurrentchaptersOfMenu, setchapterOfMenu }) => {
   ];
 
   return (
-    <div className="Menu">
+    <div className={classes.Menu}>
       {chaptersOfMenu.map((chapter) =>
         chapter.identifier === CurrentchaptersOfMenu ? (
           <div
-            className="ActiveChapterOfMenu"
+            className={classes.ActiveChapterOfMenu}
             key={chapter.name}
-            onClick={() => {setchapterOfMenu(chapter.identifier)}}
+            onClick={() => {
+              setchapterOfMenu(chapter.identifier);
+            }}
           >
             {chapter.name}
           </div>
         ) : (
           <div
-            className="ChapterOfMenu"
+            className={classes.ChapterOfMenu}
             key={chapter.name}
-            onClick={() => {setchapterOfMenu(chapter.identifier)}}
+            onClick={() => {
+              setchapterOfMenu(chapter.identifier);
+            }}
           >
             {chapter.name}
           </div>

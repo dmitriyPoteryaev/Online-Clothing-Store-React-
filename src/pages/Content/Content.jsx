@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from "react";
-import BlockOfContent from "../components/BlockOfContent/BlockOfContent";
-import "../style/style.css";
-import cross from "../assets/cross.png";
+import BlockOfContent from "../../components/BlockOfContent/BlockOfContent";
+import classes from './Content.module.css';
+import cross from "../../assets/cross.png";
+import  "../../style/style.css";
+import BlockForOrder from "../../components/UI/BlockForOrder/BlockForOrder";
+import ButtonForBackOrSendOrder from "../../components/UI/ButtonForBackOrSendOrder/ButtonForBackOrSendOrder";
+import ModalForOrder from "../../components/UI/ModalForOrder/ModalForOrder";
 
-import BlockForOrder from "../components/UI/BlockForOrder/BlockForOrder";
-import ButtonForBackOrSendOrder from "../components/UI/ButtonForBackOrSendOrder/ButtonForBackOrSendOrder";
-import ModalForOrder from "../components/UI/ModalForOrder/ModalForOrder";
-
-import Header from "../Header";
-import Sorting from "../Sorting";
-import { useSortingContent } from "../customHooks/useSortingContent";
-import Menu from "../Menu";
-import Form from "../Form";
-import { useFetching } from "../customHooks/useFetching";
-import Loader from "../components/UI/Loader/Loader";
-import { ContentServies } from "../API/ContentServies";
-import GoodBye from "../components/UI/GoodBye/GoodBye";
-import { useNavigate } from "react-router-dom"
-
+import Header from "../../allPart/Header/Header";
+import Sorting from "../../allPart/Sorting/Sorting";
+import { useSortingContent } from "../../customHooks/useSortingContent";
+import Menu from "../../allPart/Menu/Menu";
+import Form from "../../allPart/Form/Form";
+import { useFetching } from "../../customHooks/useFetching";
+import Loader from "../../components/UI/Loader/Loader";
+import { ContentServies } from "../../API/ContentServies";
+import GoodBye from "../../components/UI/GoodBye/GoodBye";
+import { useNavigate } from "react-router-dom";
 
 function Content() {
   const [visiableOfModal, setVisiableOfModal] = useState(false);
@@ -25,40 +24,28 @@ function Content() {
   const [goodBye, setGoodBye] = useState(true);
   const [filterSelector, setfilterSelector] = useState("");
   const [somethingContent, setSomethingContent] = useState([]);
-  
 
   const Content = useSortingContent(somethingContent, filterSelector);
-
- 
- 
 
   const [CurrentchaptersOfMenu, setchapterOfMenu] = useState("Backpacks");
 
   const [fetching, isLoading, error] = useFetching(async (ind) => {
     setfilterSelector("");
 
-    const res = await ContentServies.GetQuery(ind);
+    const res = await ContentServies.GetQuery();
 
-    setSomethingContent(res);
-    
-
-
- 
-
-   
+    setSomethingContent(res[ind]);
   }, CurrentchaptersOfMenu);
 
   const router = useNavigate();
 
   useEffect(() => {
     fetching();
-    router(`/louis_Vuitton/${CurrentchaptersOfMenu}`)
-    if(visiableOfModal){
-
-      router(`/louis_Vuitton/${CurrentchaptersOfMenu}+modal`)
-      
+    router(`/louis_Vuitton/${CurrentchaptersOfMenu}`);
+    if (visiableOfModal) {
+      router(`/louis_Vuitton/${CurrentchaptersOfMenu}+modal`);
     }
-  }, [CurrentchaptersOfMenu,visiableOfModal]);
+  }, [CurrentchaptersOfMenu, visiableOfModal]);
 
   const removeOrderPosition = (orderPosition) => {
     setPositionForOrder(
@@ -66,9 +53,8 @@ function Content() {
     );
   };
 
- 
   return (
-    <div >
+    <div>
       <Header
         quality={positionForOrder.length}
         getVisModal={setVisiableOfModal}
@@ -77,11 +63,13 @@ function Content() {
       {isLoading ? (
         <Loader />
       ) : error ? (
-        <h1 className="Error">Произошла ошибка ${error}</h1>
+        <h1 className={classes.Error}>Произошла ошибка ${error}</h1>
       ) : (
         <div>
-          <div className="Filter">
-            <div className="TitleOfMenu">Каталог</div>
+          <div className={classes.Filter}>
+            <div 
+            className={classes.TitleOfMenu}
+            >Каталог</div>
             <Sorting
               filterSelector={filterSelector}
               setfilterSelector={setfilterSelector}
@@ -90,14 +78,13 @@ function Content() {
           <Menu
             CurrentchaptersOfMenu={CurrentchaptersOfMenu}
             setchapterOfMenu={setchapterOfMenu}
-          
           />
 
-          <div className="Allcontent">
+          <div className={classes.Allcontent}>
+        
             {Content.map((content) => (
               <BlockOfContent
                 value={content}
-                key={content.id}
                 addThingForOrder={setPositionForOrder}
                 quantityThingForOrder1={positionForOrder}
               />
@@ -111,16 +98,16 @@ function Content() {
             >
               {goodBye ? (
                 positionForOrder.length !== 0 ? (
-                  <div className="ContetnForOrder">
-                    <div className="HeaderOfModal">
-                      <h1 className="TitleNothingOrder">Корзина</h1>
+                  <div className={classes.ContetnForOrder}>
+                    <div className={classes.HeaderOfModal}>
+                      <h1 className={classes.TitleNothingOrder}>Корзина</h1>
                       <img
                         src={cross}
-                        className="cross"
+                        className={classes.cross}
                         onClick={() => setVisiableOfModal(false)}
                       />
                     </div>
-                    <div className="FullInfoAboutThingOrder">
+                    <div   className={classes.FullInfoAboutThingOrder}>
                       Товары в корзине
                     </div>
                     {positionForOrder.map((contentForOrder) => (
@@ -130,7 +117,7 @@ function Content() {
                         remove={removeOrderPosition}
                       />
                     ))}
-                    <p className="FullInfoAboutClient">Оформить заказ</p>
+                    <p className={classes.FullInfoAboutClient}>Оформить заказ</p>
                     <Form
                       quantityThingForOrder={positionForOrder.length}
                       visiable={visiableOfModal}
@@ -140,16 +127,16 @@ function Content() {
                     />
                   </div>
                 ) : (
-                  <div className="NothingOrder">
-                    <div className="HeaderOfModal">
-                      <h1 className="TitleNothingOrder">Корзина</h1>
+                  <div className={classes.NothingOrder}>
+                    <div className={classes.HeaderOfModal}>
+                      <h1 className={classes.TitleNothingOrder}>Корзина</h1>
                       <img
                         src={cross}
-                        className="cross"
+                        className={classes.cross}
                         onClick={() => setVisiableOfModal(false)}
                       />
                     </div>
-                    <div className="AttenrionNothingOrder">
+                    <div className={classes.AttenrionNothingOrder}>
                       Пока что вы ничего не добавли в корзину
                     </div>
                     <ButtonForBackOrSendOrder

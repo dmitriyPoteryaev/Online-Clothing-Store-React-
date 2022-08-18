@@ -1,0 +1,15 @@
+.navbar {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: lightgray;
+}
+
+.navbar__links {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}

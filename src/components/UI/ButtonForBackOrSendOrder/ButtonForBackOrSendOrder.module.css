@@ -1,25 +1,23 @@
-.bottomforBackorSendOrderBlack{
+.bottomforBackorSendOrderBlack, .bottomforBackorSendOrderGrey{
+    background-color: black;
+
 
     margin-top:24px;
-    width:364px;
-    background-color: black;
+    width:95%;
     height:50px ;
     color:white;
+    border:hidden;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
   
 }
 .bottomforBackorSendOrderGrey{
-
-    margin-top:24px;
-    width:364px;
-    border:hidden;
-    background-color: #59606D;
-    height:50px ;
-    color:white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-  
+    background-color: #59606D;  
 }
+
+/* mobile */
+@media (max-width: 450px) {
+    .bottomforBackorSendOrderBlack , .bottomforBackorSendOrderGrey {
+        width:70%;
+    }}

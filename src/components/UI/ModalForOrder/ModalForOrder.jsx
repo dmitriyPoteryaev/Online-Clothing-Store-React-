@@ -5,11 +5,9 @@ const ModalForOrder = ({
   children,
   visiable,
   funcForModal2,
-  quantityThingForOrder,
   setGoodBye
 }) => {
   const StyleModal = [classes.modalForOrder];
-  console.log(quantityThingForOrder);
 
   if (visiable) {
     StyleModal.push(classes.active);

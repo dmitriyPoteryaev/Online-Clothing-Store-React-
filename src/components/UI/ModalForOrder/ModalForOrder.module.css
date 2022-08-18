@@ -1,7 +1,7 @@
 .modalForOrder {
   position: fixed;
   background: rgba(255, 255, 255, 0.5);
-  left:0px ;
+  left:0 ;
   right:0;
   top:0;
   bottom:0;
@@ -27,3 +27,7 @@
     margin: 0;
     
 }
+@media (max-width: 450px) {
+  .bottomforBackorSendOrderBlack  {
+      width:100%;
+  }}

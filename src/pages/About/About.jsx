@@ -1,8 +1,10 @@
 import React from 'react';
-import "../style/style.css"
+import classes from './About.module.css';
+
+
 const About = () => {
     return (
-        <div className="About">
+        <div className={classes.About}>
             Данная страница предназначена для проверки моих навыков по React.
         </div>
     );

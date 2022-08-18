@@ -1,0 +1,134 @@
+.App {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Allcontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 50%;
+  margin-right: 88px;
+  margin-left: 248px;
+  margin-top: -150px;
+  margin-bottom: 66px;
+}
+
+.Filter {
+  font-family: "PT Sans";
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 42px;
+  margin-bottom: 0px;
+}
+
+.TitleOfMenu {
+  font-weight: 700;
+  font-size: 32px;
+  color: #1f1f1f;
+  font-style: normal;
+  align-self: baseline;
+  margin-left: 88px;
+}
+
+.NothingOrder {
+  font-family: "PT Sans";
+  margin-left: 48px;
+}
+
+.TitleNothingOrder {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.AttenrionNothingOrder {
+  font-size: 22px;
+  margin-top: 24px;
+  max-width: 364px;
+}
+
+.ContetnForOrder {
+  width: 100%;
+
+  margin-top: 16px;
+  margin-bottom: 32px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.FullInfoAboutClient {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #59606d;
+}
+
+.FullInfoAboutThingOrder {
+  color: #59606d;
+  font-size: 18px;
+  margin-top: 24px;
+  width: 100%;
+  height: 23px;
+  margin-top: 24px;
+  margin-bottom: 46px;
+}
+
+.Error {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.HeaderOfModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.cross {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  
+}
+
+/* mobile */
+@media (max-width: 550px) {
+  .Allcontent {
+    margin-top: 100px;
+    width: 70%;
+    margin-right: 0px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .Filter {
+    flex-direction: column-reverse;
+    margin-left: 40px;
+    width: 70%;
+  }
+
+  .TitleOfMenu {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .cross {
+    margin-right: -20px;
+
+  }
+}
+
+@media (max-width: 350px) {
+  .Allcontent {
+    margin-top: 100px;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .HeaderOfModal {
+    margin-left: -40px;
+  
+  }
+}

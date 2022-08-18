@@ -1,0 +1,48 @@
+.Menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 88px;
+    font-family: "PT Sans";
+    margin-bottom: 0px;
+    margin-top: 24px;
+    margin-right: 40px;
+    margin-left: 88px;
+    width: 12%;
+  }
+  .ChapterOfMenu, .ActiveChapterOfMenu  {
+    color: grey;
+    
+    width: 75px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-size: 16px;
+    padding: 1px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .ActiveChapterOfMenu {
+    color: black;
+    border-bottom: solid;
+    border-width: 2px;
+  }
+
+  /* mobile */
+
+@media (max-width: 550px) {
+  .Menu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+ 
+  }
+  .ChapterOfMenu {
+
+   width: calc(33% - 12px);
+  }
+  .ActiveChapterOfMenu {
+    width: calc(33% - 12px);
+  }
+
+}

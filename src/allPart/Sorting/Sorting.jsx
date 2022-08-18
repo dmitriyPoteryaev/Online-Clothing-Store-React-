@@ -1,6 +1,5 @@
 import React from 'react';
-import Filter from './components/UI/Filter/Filter'
-
+import Filter from './Filter'
 
 const Sorting = ({filterSelector,setfilterSelector}) => {
 

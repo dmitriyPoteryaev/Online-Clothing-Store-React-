@@ -1,0 +1,19 @@
+.InfoAboutClient{
+    width:95%;
+    height:50px;
+    border-radius:5px;
+    border-style: none;
+    font-size: 16px;
+    background-color: #F8F8F8;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color:black;
+    padding-top:14px;
+    padding-bottom:14px;
+    padding-left:14px;
+    
+    }
+    @media (max-width: 450px) {
+        .InfoAboutClient  {
+            width:70%;
+        }}

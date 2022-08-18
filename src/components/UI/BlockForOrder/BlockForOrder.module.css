@@ -1,64 +1,132 @@
-.blockForContent{
-    width: 364px;
-    height: 120px;
-    padding: 0px;
-    box-sizing: border-box;
-    position: relative;
-    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
-    font-family: "PT Sans", sans-serif;
-    border-radius: 5%;
-    margin-bottom: 12px;
+.blockForContent {
+  width: 95%;
+  height: 120px;
+  padding: 0px;
+  position: relative;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: "PT Sans", sans-serif;
+  border-radius: 5%;
+  margin-bottom: 12px;
+
+}
+
+.raiting {
+
+  position: absolute;
+  color: #f2c94c;
+  bottom: 16px;
+  left: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.TitleOfThing {
+  position: absolute;
+  top: 12px;
+  left: 130px;
+  color: #59606d;
+  font-size: 14px;
+  width: 170px;
+  height: 36px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Price {
+  position: absolute;
+  width: 80px;
+  height: 18px;
+  top: 54px;
+  left: 130px;
+  font-weight: 700;
+}
+
+.content_picture {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  width: 70px;
+  height: 90px;
+}
+
+.img_starForRaiting {
+  position: absolute;
+  left: 130px;
+  bottom: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.img_trash {
+  position: absolute;
+  right: 22px;
+  bottom: 49px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+}
+
+@media (max-width: 450px) {
+  .blockForContent {
+    width: 100%;
+    height: 240px;
+    margin-right: 0px;
+  }
+
+  .content_picture {
+    left: 65px;
+  }
+
+  .TitleOfThing {
+    left: 25px;
+    top: 120px;
+  }
+
+  .Price {
+    left: 25px;
+    top: 170px;
+  }
+
+  .img_trash {
+    bottom: 20px;
+  }
+
+  .img_starForRaiting {
+    left: 22px;
+    bottom: 20px;
 
   }
+
   .raiting {
-    
-    position: absolute;
-    color: #f2c94c;
-    bottom: 16px;
-    left: 150px;
-    margin: 0;
-    padding: 0;
+    left: 45px;
+    bottom: 20px;
+
   }
-  .TitleOfThing {
-    position: absolute;
-    top: 12px;
-    left: 130px;
-    color: #59606d;
-    font-size: 14px;
-    width:170px;
-    height: 36px;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .Price {
-    position: absolute;
-    width:80px;
-    height: 18px;
-    top: 54px;
-    left: 130px;
-    font-weight: 700;
+}
+@media (max-width: 300px) {
+  .blockForContent {
+    height: 300px;
+
   }
   .content_picture {
-    position: absolute;
-    left: 25px;
-    top: 15px;
-    width: 70px;
-    height: 90px;
+    left: 35px;
   }
-  .img_starForRaiting {
-    position: absolute;
-    left: 130px;
-    bottom: 16px;
-    margin: 0;
-    padding: 0;
-  }
-  .img_trash{
-    position: absolute;
-    right: 22px;
-    bottom: 49px;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
 
+  .TitleOfThing {
+    left: 5px;
+    top: 120px;
   }
+
+  .Price {
+    left: 25px;
+    top: 180px;
+  }
+
+ 
+
+
+
   
+
+}

@@ -7,13 +7,24 @@ import backpack from '../../assets/backpack.png';
 import shirts from '../../assets/shirts.png';
 import leatherJacket from '../../assets/leatherJacket.png';
 
-const BlockOfContent = ({value,key,addThingForOrder,quantityThingForOrder1}) => {
+const BlockOfContent = ({value,addThingForOrder,quantityThingForOrder1}) => {
 
 
-    const {TitleOfThing,Price_rub,id,img_content,img_starForRaiting,rating} = value;
+    const {
+      TitleOfThing,
+      Price_rub,
+      id,
+      img_content,
+      img_starForRaiting,
+      rating} = value;
+
+
   
     return (
-        <div className={classes.blockForContent}>
+        <div
+         className={classes.blockForContent}
+         key ={id}
+         >
             <p className={classes.raiting}>{rating}</p>
             <p className={classes.TitleOfThing}> {TitleOfThing}</p>
             <p className={classes.Price}>{Price_rub} 000 ₽</p>
@@ -35,9 +46,7 @@ const BlockOfContent = ({value,key,addThingForOrder,quantityThingForOrder1}) => 
             src={PitureButtonForOrder} 
              className={classes.ForOrder} 
               alt={'PitureButtonForOrder'} 
-              onClick={()=>{addThingForOrder([...quantityThingForOrder1,
-                
-                
+              onClick={()=>{addThingForOrder([...quantityThingForOrder1,     
             {TitleOfThing
             ,Price_rub,
             id:Date.now(),
@@ -47,7 +56,10 @@ const BlockOfContent = ({value,key,addThingForOrder,quantityThingForOrder1}) => 
               onMouseOver={(event)=>(event.currentTarget.src = blackButtonForOrder)}
               onMouseOut={(event)=>(event.currentTarget.src = PitureButtonForOrder)}
               />
-            <img src={starForRaiting}  className={classes.img_starForRaiting}  alt={'PictureForRaiting'}/>
+            <img 
+            src={starForRaiting}  
+            className={classes.img_starForRaiting}  
+            alt={'PictureForRaiting'}/>
         </div>
     );
 };

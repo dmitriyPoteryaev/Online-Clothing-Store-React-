@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { ContentServies } from "./API/ContentServies";
-import ButtonForBackOrSendOrder from "./components/UI/ButtonForBackOrSendOrder/ButtonForBackOrSendOrder";
-import Attention from "./utilits/Attention/Attention";
+import { ContentServies } from "../../API/ContentServies";
+import ButtonForBackOrSendOrder from "../../components/UI/ButtonForBackOrSendOrder/ButtonForBackOrSendOrder";
+import Attention from "../../utilits/Attention/Attention";
 import InputMask from "react-input-mask";
+import classes from './Form.module.css';
+
 
 const Form = ({
   quantityThingForOrder,
@@ -50,7 +52,7 @@ const Form = ({
           type="text"
           placeholder="Ваше имя"
           value={FullInfo.Name}
-          className="InfoAboutClient"
+          className={classes.InfoAboutClient}
           onChange={(event) =>
             setFullInfo({ ...FullInfo, Name: event.target.value })
           }
@@ -62,13 +64,13 @@ const Form = ({
           onChange={(event) =>
             setFullInfo({ ...FullInfo, Phone: event.target.value })
           }
-          className="InfoAboutClient"
+          className={classes.InfoAboutClient}
         >
           {() => (
             <input
               placeholder="Телефон"
               type="tel"
-              className="InfoAboutClient"
+              className={classes.InfoAboutClient}
             />
           )}
         </InputMask>
@@ -77,7 +79,7 @@ const Form = ({
           type="text"
           placeholder="Адрес"
           value={FullInfo.Adress}
-          className="InfoAboutClient"
+          className={classes.InfoAboutClient}
           onChange={(event) =>
             setFullInfo({ ...FullInfo, Adress: event.target.value })
           }

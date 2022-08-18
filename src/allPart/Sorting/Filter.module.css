@@ -1,0 +1,16 @@
+.select{
+
+width:160px;
+height:26px;
+margin-right:0px;
+margin-left:100px;
+align-self:baseline;
+margin-right: 137px;
+}
+@media (max-width: 450px) {
+    .select {
+        margin-left:0px;
+        
+   
+    }
+}

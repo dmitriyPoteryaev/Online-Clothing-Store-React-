@@ -1,8 +1,8 @@
-import Content from "./pages/Content";
+import Content from "./pages/Content/Content";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Navbar from "./components/UI/Navbar/Navbar";
 
 

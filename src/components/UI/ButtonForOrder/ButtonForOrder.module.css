@@ -1,6 +1,6 @@
 .ButtonForOrder {
 
- position:relative;
+  position: relative;
   margin-top: 20px;
   margin-right: 108px;
   margin-left: 50px;
@@ -8,31 +8,42 @@
   width: 24px;
   height: 26px;
   background-color: white;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.imgButtonForOrder{
+.imgButtonForOrder {
   width: 24px;
   height: 26px;
-  
+
 
 }
-.cicle{
- position: absolute;
- display: flex;
- justify-content: center;
- align-items:center;
- width:12px;
- height:12px;
- border-radius:50%;
-background-color:#959DAD;
-left:16px;
-top:-4px;
+
+.cicle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #959DAD;
+  left: 16px;
+  top: -4px;
 }
-.qualityOfOrder{
+
+.qualityOfOrder {
   font-family: "PT Sans";
   text-align: center;
-  color:white;
+  color: white;
   font-size: 8px;
   font-weight: 700;
+}
+
+/* mobile */
+
+@media (max-width: 280px) {
+  .ButtonForOrder {
+    margin-right: 50px;
+
   }
+}
