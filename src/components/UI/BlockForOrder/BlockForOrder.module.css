@@ -7,7 +7,6 @@
   font-family: "PT Sans", sans-serif;
   border-radius: 5%;
   margin-bottom: 12px;
-
 }
 
 .raiting {
@@ -66,6 +65,8 @@
   cursor: pointer;
 
 }
+
+
 
 @media (max-width: 450px) {
   .blockForContent {

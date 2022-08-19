@@ -1,10 +1,11 @@
+
+
 .Menu {
     display: flex;
     flex-direction: column;
     margin-left: 88px;
-    font-family: "PT Sans";
     margin-bottom: 0px;
-    margin-top: 24px;
+    margin-top: 50px;
     margin-right: 40px;
     margin-left: 88px;
     width: 12%;
@@ -12,8 +13,9 @@
   .ChapterOfMenu, .ActiveChapterOfMenu  {
     color: grey;
     
+    font-family: "PT Sans",'sans-serif';
     width: 75px;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 16px;
     font-size: 16px;
     padding: 1px;
@@ -22,27 +24,36 @@
   }
   .ActiveChapterOfMenu {
     color: black;
-    border-bottom: solid;
     border-width: 2px;
   }
 
   /* mobile */
 
 @media (max-width: 550px) {
+  .BlockMenu {
+    overflow-x:scroll;
+  }
+  .BlockMenu::-webkit-scrollbar {
+    background-color: white;
+    
+
+}
   .Menu {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    min-width: 550px;
     margin-right: 0px;
     margin-left: 0px;
- 
-  }
-  .ChapterOfMenu {
-
-   width: calc(33% - 12px);
+    border-bottom: grey 2px solid;
   }
   .ActiveChapterOfMenu {
-    width: calc(33% - 12px);
+    padding-bottom: 15px;
+    border-width: 6px;
+    border-bottom:black 5px solid;
+    border-bottom-style: groove;
+    margin-bottom: -3px;
   }
+
+
 
 }

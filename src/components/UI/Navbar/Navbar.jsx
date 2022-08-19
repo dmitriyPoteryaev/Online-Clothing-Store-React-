@@ -10,8 +10,14 @@ const Navbar = () => {
     return (
         <div className={classes.navbar}>
         <div className={classes.navbar__links}>
-          <Link to="/about">О сайте </Link>
-          <Link to="/louis_Vuitton/Backpacks">Перейти на сайт магазина </Link>
+          <Link
+           to="/about"
+           className={classes.link}
+           >О сайте </Link>
+          <Link
+           to="/louis_Vuitton/Backpacks"
+           className= {classes.link}
+           >Перейти на сайт магазина </Link>
           
         </div>
       </div>

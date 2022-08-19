@@ -8,7 +8,6 @@
   flex-wrap: wrap;
   gap: 16px;
   width: 50%;
-  margin-right: 88px;
   margin-left: 248px;
   margin-top: -150px;
   margin-bottom: 66px;
@@ -97,13 +96,17 @@
 /* mobile */
 @media (max-width: 550px) {
   .Allcontent {
-    margin-top: 100px;
-    width: 70%;
-    margin-right: 0px;
-    margin-left: 50px;
+    margin-top: 70px;
+    width: 100%;
+    margin-left: 0px;
+
   }
 }
 @media (max-width: 450px) {
+  .HeaderOfModal {
+    width:100%;
+    margin-left: -40px;
+  }
   .Filter {
     flex-direction: column-reverse;
     margin-left: 40px;
@@ -118,6 +121,7 @@
     margin-right: -20px;
 
   }
+
 }
 
 @media (max-width: 350px) {
@@ -127,8 +131,5 @@
     margin-right: 0px;
     margin-left: 0px;
   }
-  .HeaderOfModal {
-    margin-left: -40px;
-  
-  }
+
 }

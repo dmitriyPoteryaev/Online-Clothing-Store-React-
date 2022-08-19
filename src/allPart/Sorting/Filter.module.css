@@ -1,11 +1,13 @@
 .select{
-
+font-family: "PT Sans",'sans-serif';
 width:160px;
 height:26px;
+font-weight: 700;
 margin-right:0px;
 margin-left:100px;
 align-self:baseline;
 margin-right: 137px;
+border-radius: 3px;
 }
 @media (max-width: 450px) {
     .select {

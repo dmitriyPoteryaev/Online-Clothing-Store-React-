@@ -2,7 +2,6 @@
   height: 100px;
   width: 100vw;
   display: flex;
-  align-items: center;
   padding: 0 15px;
   background: lightgray;
 }
@@ -10,6 +9,24 @@
 .navbar__links {
   margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
-  width: 200px;
+  flex-direction: column;
+  width: 250px;
+  justify-content: space-around;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 800;
+  height:30px;
+  font-size: 20px;
+}
+.link:hover {
+  border-bottom: black solid 3px;
+}
+@media (max-width: 300px) {
+  .navbar {
+    height: 150px;
+
+  }
 }

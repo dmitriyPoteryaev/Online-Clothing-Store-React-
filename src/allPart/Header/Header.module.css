@@ -1,7 +1,7 @@
 .Header {
   display: flex;
   justify-content: space-between;
-  height: 20%;
+  height: 50px;
   width: 100%;
   border-radius: 2%;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
@@ -10,20 +10,17 @@
 .Logo {
   margin-top: 18px;
   margin-left: 88px;
-  align-self: baseline;
 }
 
 /* mobile */
-
-@media (max-width: 350px) {
+@media (max-width: 1000px) {
   .Logo {
     margin-left: 10px;
     margin-right: 0px;
 
   }
-
-  .TitleOfMenu {
-    margin-left: 0px;
-    margin-top: 50px;
-  }
 }
+
+
+
+

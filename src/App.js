@@ -19,7 +19,7 @@ function App() {
 
           <Route exact path={"/louis_Vuitton"} element={<Content />} />
 
-          <Route exact path={"/louis_Vuitton/:CurrentchaptersOfMenu"} element={<Content />} />
+          <Route exact path={"/louis_Vuitton/:chapter"} element={<Content />} />
           <Route path="*" element={<Content />} />
         </Routes>
       </BrowserRouter>

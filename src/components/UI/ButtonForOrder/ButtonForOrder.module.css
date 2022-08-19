@@ -1,10 +1,8 @@
 .ButtonForOrder {
-
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 108px;
   margin-left: 50px;
-  align-self: baseline;
   width: 24px;
   height: 26px;
   background-color: white;
@@ -12,10 +10,8 @@
 }
 
 .imgButtonForOrder {
-  width: 24px;
-  height: 26px;
-
-
+  width: 40px;
+  height: 30px;
 }
 
 .cicle {
@@ -26,7 +22,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #959DAD;
+  background-color: #959dad;
   left: 16px;
   top: -4px;
 }
@@ -41,9 +37,14 @@
 
 /* mobile */
 
+@media (max-width: 1000px) {
+  .ButtonForOrder {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 280px) {
   .ButtonForOrder {
     margin-right: 50px;
-
   }
 }

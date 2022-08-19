@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import BlockOfContent from "../../components/BlockOfContent/BlockOfContent";
-import classes from './Content.module.css';
+import classes from "./Content.module.css";
 import cross from "../../assets/cross.png";
-import  "../../style/style.css";
+import "../../style/style.css";
 import BlockForOrder from "../../components/UI/BlockForOrder/BlockForOrder";
 import ButtonForBackOrSendOrder from "../../components/UI/ButtonForBackOrSendOrder/ButtonForBackOrSendOrder";
 import ModalForOrder from "../../components/UI/ModalForOrder/ModalForOrder";
@@ -17,6 +17,7 @@ import Loader from "../../components/UI/Loader/Loader";
 import { ContentServies } from "../../API/ContentServies";
 import GoodBye from "../../components/UI/GoodBye/GoodBye";
 import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Content() {
   const [visiableOfModal, setVisiableOfModal] = useState(false);
@@ -27,25 +28,25 @@ function Content() {
 
   const Content = useSortingContent(somethingContent, filterSelector);
 
-  const [CurrentchaptersOfMenu, setchapterOfMenu] = useState("Backpacks");
+  // const [CurrentchaptersOfMenu, setchapterOfMenu] = useState();
+  const params = useParams();
 
-  const [fetching, isLoading, error] = useFetching(async (ind) => {
+  const [fetching, isLoading, error] = useFetching(async (par) => {
     setfilterSelector("");
 
     const res = await ContentServies.GetQuery();
 
-    setSomethingContent(res[ind]);
-  }, CurrentchaptersOfMenu);
+    setSomethingContent(res[par]);
+  }, params.chapter);
 
-  const router = useNavigate();
+  // useEffect(() => {
+  //   setchapterOfMenu(params.chapter.identifier)
+
+  // }, [params.chapter.identifier]);
 
   useEffect(() => {
-    fetching();
-    router(`/louis_Vuitton/${CurrentchaptersOfMenu}`);
-    if (visiableOfModal) {
-      router(`/louis_Vuitton/${CurrentchaptersOfMenu}+modal`);
-    }
-  }, [CurrentchaptersOfMenu, visiableOfModal]);
+    fetching(params.chapter);
+  }, [params.chapter]);
 
   const removeOrderPosition = (orderPosition) => {
     setPositionForOrder(
@@ -67,21 +68,15 @@ function Content() {
       ) : (
         <div>
           <div className={classes.Filter}>
-            <div 
-            className={classes.TitleOfMenu}
-            >Каталог</div>
+            <div className={classes.TitleOfMenu}>Каталог</div>
             <Sorting
               filterSelector={filterSelector}
               setfilterSelector={setfilterSelector}
             />
           </div>
-          <Menu
-            CurrentchaptersOfMenu={CurrentchaptersOfMenu}
-            setchapterOfMenu={setchapterOfMenu}
-          />
+          <Menu />
 
           <div className={classes.Allcontent}>
-        
             {Content.map((content) => (
               <BlockOfContent
                 value={content}
@@ -107,7 +102,7 @@ function Content() {
                         onClick={() => setVisiableOfModal(false)}
                       />
                     </div>
-                    <div   className={classes.FullInfoAboutThingOrder}>
+                    <div className={classes.FullInfoAboutThingOrder}>
                       Товары в корзине
                     </div>
                     {positionForOrder.map((contentForOrder) => (
@@ -117,7 +112,9 @@ function Content() {
                         remove={removeOrderPosition}
                       />
                     ))}
-                    <p className={classes.FullInfoAboutClient}>Оформить заказ</p>
+                    <p className={classes.FullInfoAboutClient}>
+                      Оформить заказ
+                    </p>
                     <Form
                       quantityThingForOrder={positionForOrder.length}
                       visiable={visiableOfModal}
