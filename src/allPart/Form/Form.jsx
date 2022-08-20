@@ -3,8 +3,7 @@ import { ContentServies } from "../../API/ContentServies";
 import ModalButton from "../../components/UI/ModalButton/ModalButton";
 import Attention from "../../utilits/Attention/Attention";
 import InputMask from "react-input-mask";
-import classes from './Form.module.css';
-
+import classes from "./Form.module.css";
 
 const Form = ({
   QualPosOrder,
@@ -13,7 +12,7 @@ const Form = ({
   visibMod,
 
   setPosOrder,
-  setGoodBye
+  setGoodBye,
 }) => {
   const [FullInfo, setFullInfo] = useState({
     Name: "",
@@ -33,9 +32,8 @@ const Form = ({
       Phone: "",
       Adress: "",
     });
-    setGoodBye(false)
+    setGoodBye(false);
     setPosOrder("");
-
   }
 
   function TimeAttention() {
@@ -46,16 +44,19 @@ const Form = ({
     }, 3000);
   }
 
-
   return (
     <div>
       <form>
-      <Attention attention={attention} />
+        <Attention attention={attention} />
         <input
           type="text"
           placeholder="Ваше имя"
           value={FullInfo.Name}
-          className={classes.InfoAboutClient}
+          className={
+            !attention && !FullInfo.Name.trim()
+              ? classes.AttenClient
+              : classes.InfoAboutClient
+          }
           onChange={(event) =>
             setFullInfo({ ...FullInfo, Name: event.target.value })
           }
@@ -67,13 +68,16 @@ const Form = ({
           onChange={(event) =>
             setFullInfo({ ...FullInfo, Phone: event.target.value })
           }
-          className={classes.InfoAboutClient}
         >
           {() => (
             <input
               placeholder="Телефон"
               type="tel"
-              className={classes.InfoAboutClient}
+              className={
+                !attention && !FullInfo.Phone.trim()
+                  ? classes.AttenClient
+                  : classes.InfoAboutClient
+              }
             />
           )}
         </InputMask>
@@ -82,7 +86,11 @@ const Form = ({
           type="text"
           placeholder="Адрес"
           value={FullInfo.Adress}
-          className={classes.InfoAboutClient}
+          className={
+            !attention && !FullInfo.Adress.trim()
+              ? classes.AttenClient
+              : classes.InfoAboutClient
+          }
           onChange={(event) =>
             setFullInfo({ ...FullInfo, Adress: event.target.value })
           }
@@ -91,17 +99,13 @@ const Form = ({
       <ModalButton
         createOrder={createOrder}
         newOrder={newOrder}
-        
         QualPosOrder={QualPosOrder}
         visibMod={visibMod}
-
         setFullInfo={setFullInfo}
         TimeAttention={TimeAttention}
       >
         Отправить
       </ModalButton>
-
-      
     </div>
   );
 };
