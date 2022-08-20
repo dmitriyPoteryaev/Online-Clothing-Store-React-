@@ -16,11 +16,8 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path="/about" element={<About />} />
-
-          <Route exact path={"/louis_Vuitton"} element={<Content />} />
-
           <Route exact path={"/louis_Vuitton/:chapter"} element={<Content />} />
-          <Route path="*" element={<Content />} />
+          <Route path="*" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>

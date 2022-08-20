@@ -1,16 +1,16 @@
-.blockForContent {
+.BlockOrder {
   width: 95%;
   height: 120px;
   padding: 0px;
   position: relative;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: "PT Sans", sans-serif;
   border-radius: 5%;
   margin-bottom: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .raiting {
-
   position: absolute;
   color: #f2c94c;
   bottom: 16px;
@@ -19,7 +19,7 @@
   padding: 0;
 }
 
-.TitleOfThing {
+.Title {
   position: absolute;
   top: 12px;
   left: 130px;
@@ -27,8 +27,8 @@
   font-size: 14px;
   width: 170px;
   height: 36px;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 800;
+  font-family: "PT Sans";
 }
 
 .Price {
@@ -38,6 +38,7 @@
   top: 54px;
   left: 130px;
   font-weight: 700;
+  width: 100px;
 }
 
 .content_picture {
@@ -59,75 +60,107 @@
 .img_trash {
   position: absolute;
   right: 22px;
-  bottom: 49px;
+  bottom: 10px;
   margin: 0;
   padding: 0;
+  width: 30px;
+  height: 40px;
   cursor: pointer;
-
 }
 
-
-
+/* mobile */
 @media (max-width: 450px) {
-  .blockForContent {
+  .BlockOrder {
     width: 100%;
     height: 240px;
-    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .content_picture {
-    left: 65px;
+    top: 40px;
+    left: 25px;
+    width: 120px;
+    height: 150px;
   }
 
-  .TitleOfThing {
-    left: 25px;
-    top: 120px;
+  .Title {
+    left: 150px;
+    top: 20px;
+    font-size: 15px;
   }
 
   .Price {
-    left: 25px;
-    top: 170px;
+    left: 150px;
+    top: 80px;
+    font-size: 20px;
   }
 
   .img_trash {
     bottom: 20px;
+    width: 40px;
+    height: 50px;
   }
 
   .img_starForRaiting {
-    left: 22px;
-    bottom: 20px;
-
+    left: 150px;
+    top: 117px;
+    width: 30px;
+    height: 30px;
   }
 
   .raiting {
-    left: 45px;
-    bottom: 20px;
-
+    left: 180px;
+    top: 120px;
+    font-size: 20px;
+    font-weight: 800;
   }
 }
-@media (max-width: 300px) {
-  .blockForContent {
+@media (max-width: 350px) {
+  .BlockOrder {
     height: 300px;
-
   }
   .content_picture {
-    left: 35px;
+    left: 45px;
+    top: 20px;
   }
 
-  .TitleOfThing {
-    left: 5px;
-    top: 120px;
+  .Title {
+    left: 25px;
+    top: 200px;
   }
 
   .Price {
     left: 25px;
-    top: 180px;
+    top: 250px;
+  }
+  .img_starForRaiting {
+    left: 190px;
+    top: 38px;
   }
 
- 
+  .raiting {
+    left: 220px;
+    top: 40px;
+  }
+}
+@media (max-width: 310px) {
+  .img_starForRaiting {
+    left: 170px;
+  }
 
+  .raiting {
+    left: 200px;
+  }
+}
+@media (max-width: 290px) {
+  .content_picture {
+    left: 15px;
+  }
+  .img_starForRaiting {
+    left: 140px;
+  }
 
-
-  
-
+  .raiting {
+    left: 170px;
+  }
 }

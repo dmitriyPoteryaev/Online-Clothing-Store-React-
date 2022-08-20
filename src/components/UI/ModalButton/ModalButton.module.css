@@ -19,5 +19,5 @@
 /* mobile */
 @media (max-width: 450px) {
     .bottomforBackorSendOrderBlack , .bottomforBackorSendOrderGrey {
-        width:70%;
+        width:100%;
     }}

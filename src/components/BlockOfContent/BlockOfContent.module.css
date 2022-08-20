@@ -94,31 +94,47 @@
 @media (min-width: 0px) and (max-width: 610px) {
   .blockForContent {
     width: 100%;
-    margin: 0px;
   }
   .TitleOfThing {
     font-size: 18px;
   }
 }
-@media (min-width: 450px) and (max-width: 550px) {
+@media (min-width: 00px) and (max-width: 550px) {
   .blockForContent {
-    width: 100%;
-    margin: 0px;
-  }
-
-  .content_picture {
-    left: 180px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
-@media (min-width: 0px) and (max-width: 300px) {
+@media (min-width: 450px) and (max-width: 550px) {
+  .blockForContent {
+    width: 100%;
+  }
+
+  .content_picture {
+    left: 110px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 350px) {
   .blockForContent {
     height: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .content_picture {
+    left: 40px;
   }
   .TitleOfThing {
     bottom: 70px;
   }
   .ForOrder {
     top: 250px;
+  }
+  .raiting {
+    left: 21px;
+  }
+  .img_starForRaiting {
+    left: 0px;
   }
 }

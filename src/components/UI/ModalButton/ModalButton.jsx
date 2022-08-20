@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./ButtonForBackOrSendOrder.module.css";
+import classes from "./ModalButton.module.css";
 
-const ButtonForBackOrSendOrder = ({
+const ModalButton = ({
   children,
   funcModChoice,
   quantityThingForOrder,
@@ -10,19 +10,14 @@ const ButtonForBackOrSendOrder = ({
   createNewOrder,
   TimeAttention,
 }) => {
-  
-
   return (
     <button
       className={classes.bottomforBackorSendOrderBlack}
       onClick={() => {
         quantityThingForOrder !== 0 && visiable
-          ? newOrder.Adress === null ||
-            newOrder.Phone === null ||
-            newOrder.Name === null ||
-            newOrder.Adress === "" ||
-            newOrder.Phone === "" ||
-            newOrder.Name === ""
+          ? !newOrder.Adress.trim() ||
+            !newOrder.Phone.trim() ||
+            !newOrder.Name.trim()
             ? TimeAttention()
             : createNewOrder(newOrder)
           : funcModChoice(false);
@@ -47,4 +42,4 @@ const ButtonForBackOrSendOrder = ({
   );
 };
 
-export default ButtonForBackOrSendOrder;
+export default ModalButton;

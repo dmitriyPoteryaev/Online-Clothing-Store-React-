@@ -4,7 +4,7 @@ import classes from "./Content.module.css";
 import cross from "../../assets/cross.png";
 import "../../style/style.css";
 import BlockForOrder from "../../components/UI/BlockForOrder/BlockForOrder";
-import ButtonForBackOrSendOrder from "../../components/UI/ButtonForBackOrSendOrder/ButtonForBackOrSendOrder";
+import ModalButton from "../../components/UI/ModalButton/ModalButton";
 import ModalForOrder from "../../components/UI/ModalForOrder/ModalForOrder";
 
 import Header from "../../allPart/Header/Header";
@@ -16,7 +16,6 @@ import { useFetching } from "../../customHooks/useFetching";
 import Loader from "../../components/UI/Loader/Loader";
 import { ContentServies } from "../../API/ContentServies";
 import GoodBye from "../../components/UI/GoodBye/GoodBye";
-import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 function Content() {
@@ -28,7 +27,6 @@ function Content() {
 
   const Content = useSortingContent(somethingContent, filterSelector);
 
-  // const [CurrentchaptersOfMenu, setchapterOfMenu] = useState();
   const params = useParams();
 
   const [fetching, isLoading, error] = useFetching(async (par) => {
@@ -38,11 +36,6 @@ function Content() {
 
     setSomethingContent(res[par]);
   }, params.chapter);
-
-  // useEffect(() => {
-  //   setchapterOfMenu(params.chapter.identifier)
-
-  // }, [params.chapter.identifier]);
 
   useEffect(() => {
     fetching(params.chapter);
@@ -68,7 +61,7 @@ function Content() {
       ) : (
         <div>
           <div className={classes.Filter}>
-            <div className={classes.TitleOfMenu}>Каталог</div>
+            <div className={classes.TitleMenu}>Каталог</div>
             <Sorting
               filterSelector={filterSelector}
               setfilterSelector={setfilterSelector}
@@ -93,16 +86,16 @@ function Content() {
             >
               {goodBye ? (
                 positionForOrder.length !== 0 ? (
-                  <div className={classes.ContetnForOrder}>
-                    <div className={classes.HeaderOfModal}>
-                      <h1 className={classes.TitleNothingOrder}>Корзина</h1>
+                  <div className={classes.OrderPosition}>
+                    <div className={classes.HeaderModal}>
+                      <h1 className={classes.TitleBasket}>Корзина</h1>
                       <img
                         src={cross}
                         className={classes.cross}
                         onClick={() => setVisiableOfModal(false)}
                       />
                     </div>
-                    <div className={classes.FullInfoAboutThingOrder}>
+                    <div className={classes.ProductBasket}>
                       Товары в корзине
                     </div>
                     {positionForOrder.map((contentForOrder) => (
@@ -112,9 +105,7 @@ function Content() {
                         remove={removeOrderPosition}
                       />
                     ))}
-                    <p className={classes.FullInfoAboutClient}>
-                      Оформить заказ
-                    </p>
+                    <p className={classes.SetOrder}>Оформить заказ</p>
                     <Form
                       quantityThingForOrder={positionForOrder.length}
                       visiable={visiableOfModal}
@@ -125,22 +116,22 @@ function Content() {
                   </div>
                 ) : (
                   <div className={classes.NothingOrder}>
-                    <div className={classes.HeaderOfModal}>
-                      <h1 className={classes.TitleNothingOrder}>Корзина</h1>
+                    <div className={classes.HeaderModal}>
+                      <h1 className={classes.TitleBasket}>Корзина</h1>
                       <img
                         src={cross}
                         className={classes.cross}
                         onClick={() => setVisiableOfModal(false)}
                       />
                     </div>
-                    <div className={classes.AttenrionNothingOrder}>
+                    <div className={classes.BasketAttention}>
                       Пока что вы ничего не добавли в корзину
                     </div>
-                    <ButtonForBackOrSendOrder
+                    <ModalButton
                       funcModChoice={setVisiableOfModal}
                     >
                       Перейти к выбору
-                    </ButtonForBackOrSendOrder>
+                    </ModalButton>
                   </div>
                 )
               ) : (

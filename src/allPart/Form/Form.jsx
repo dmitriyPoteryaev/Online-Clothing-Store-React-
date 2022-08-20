@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ContentServies } from "../../API/ContentServies";
-import ButtonForBackOrSendOrder from "../../components/UI/ButtonForBackOrSendOrder/ButtonForBackOrSendOrder";
+import ModalButton from "../../components/UI/ModalButton/ModalButton";
 import Attention from "../../utilits/Attention/Attention";
 import InputMask from "react-input-mask";
 import classes from './Form.module.css';
@@ -85,7 +85,7 @@ const Form = ({
           }
         ></input>
       </form>
-      <ButtonForBackOrSendOrder
+      <ModalButton
         createNewOrder={createNewOrder}
         newOrder={newOrder}
         quantityThingForOrder={quantityThingForOrder}
@@ -94,7 +94,7 @@ const Form = ({
         TimeAttention={TimeAttention}
       >
         Отправить
-      </ButtonForBackOrSendOrder>
+      </ModalButton>
 
       
     </div>

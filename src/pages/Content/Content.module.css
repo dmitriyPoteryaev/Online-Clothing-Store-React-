@@ -22,7 +22,7 @@
   margin-bottom: 0px;
 }
 
-.TitleOfMenu {
+.TitleMenu {
   font-weight: 700;
   font-size: 32px;
   color: #1f1f1f;
@@ -36,42 +36,41 @@
   margin-left: 48px;
 }
 
-.TitleNothingOrder {
+.TitleBasket {
   font-size: 32px;
   font-weight: 700;
   margin-top: 24px;
 }
 
-.AttenrionNothingOrder {
+.BasketAttention {
   font-size: 22px;
   margin-top: 24px;
   max-width: 364px;
 }
 
-.ContetnForOrder {
+.OrderPosition {
   width: 100%;
-
   margin-top: 16px;
   margin-bottom: 32px;
   margin-left: 48px;
   margin-right: 48px;
 }
 
-.FullInfoAboutClient {
+.SetOrder {
   font-size: 18px;
   margin-top: 32px;
   margin-bottom: 16px;
   color: #59606d;
 }
 
-.FullInfoAboutThingOrder {
+.ProductBasket {
   color: #59606d;
   font-size: 18px;
   margin-top: 24px;
   width: 100%;
   height: 23px;
   margin-top: 24px;
-  margin-bottom: 46px;
+  margin-bottom: 20px;
 }
 
 .Error {
@@ -79,7 +78,7 @@
   margin-top: 200px;
 }
 
-.HeaderOfModal {
+.HeaderModal {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -103,9 +102,9 @@
   }
 }
 @media (max-width: 450px) {
-  .HeaderOfModal {
+  .HeaderModal {
     width:100%;
-    margin-left: -40px;
+    margin-left: 0px;
   }
   .Filter {
     flex-direction: column-reverse;
@@ -113,13 +112,18 @@
     width: 70%;
   }
 
-  .TitleOfMenu {
+  .TitleMenu {
     margin-left: 0px;
     margin-top: 50px;
   }
   .cross {
-    margin-right: -20px;
+    margin-right: 0px;
 
+  }
+  .OrderPosition {
+
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 }
