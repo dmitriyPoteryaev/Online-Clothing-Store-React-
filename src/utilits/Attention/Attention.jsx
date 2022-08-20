@@ -3,11 +3,11 @@ import exclamation from "../../assets/exclamation_mark.png";
 import classes from"./Attention.module.css"
 
 
-const Attention = ({visiable}) => {
+const Attention = ({attention}) => {
 
 
     return (
-        <div   className={visiable ? [classes.Attention_hide].join(''): [classes.Attention_vis].join('') }>
+        <div   className={attention ? classes.Attention_hide: classes.Attention_vis }>
         <img src={exclamation} />
         <div>Все поля обязательные.</div>
       </div>

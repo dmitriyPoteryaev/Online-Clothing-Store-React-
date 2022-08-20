@@ -1,4 +1,4 @@
-.bottomforBackorSendOrderBlack, .bottomforBackorSendOrderGrey{
+.bottomBlack, .bottomGrey{
     background-color: black;
     margin-top:24px;
     width:95%;
@@ -10,12 +10,12 @@
     cursor: pointer;
   
 }
-.bottomforBackorSendOrderGrey{
+.bottomGrey{
     background-color: #59606D;  
 }
 
 /* mobile */
 @media (max-width: 450px) {
-    .bottomforBackorSendOrderBlack , .bottomforBackorSendOrderGrey {
+    .bottomBlack , .bottomGrey {
         width:100%;
     }}

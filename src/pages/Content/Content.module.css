@@ -31,7 +31,7 @@
   margin-left: 88px;
 }
 
-.NothingOrder {
+/* .NothingOrder {
   font-family: "PT Sans";
   margin-left: 48px;
 }
@@ -54,9 +54,9 @@
   margin-bottom: 32px;
   margin-left: 48px;
   margin-right: 48px;
-}
+} */
 
-.SetOrder {
+/* .SetOrder {
   font-size: 18px;
   margin-top: 32px;
   margin-bottom: 16px;
@@ -71,14 +71,14 @@
   height: 23px;
   margin-top: 24px;
   margin-bottom: 20px;
-}
+} */
 
 .Error {
   text-align: center;
   margin-top: 200px;
 }
 
-.HeaderModal {
+/* .HeaderModal {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -90,7 +90,7 @@
   height: 14px;
   cursor: pointer;
   
-}
+} */
 
 /* mobile */
 @media (max-width: 550px) {
@@ -102,21 +102,21 @@
   }
 }
 @media (max-width: 450px) {
-  .HeaderModal {
+  /* .HeaderModal {
     width:100%;
     margin-left: 0px;
-  }
+  } */
   .Filter {
     flex-direction: column-reverse;
     margin-left: 40px;
     width: 70%;
   }
 
-  .TitleMenu {
+   .TitleMenu {
     margin-left: 0px;
     margin-top: 50px;
   }
-  .cross {
+  /*.cross {
     margin-right: 0px;
 
   }
@@ -128,7 +128,7 @@
   .NothingOrder {
     width:100%;
     margin-left: 5px;
-  }
+  } */
 
 }
 

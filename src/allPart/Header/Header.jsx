@@ -1,23 +1,17 @@
-import React from 'react';
-import classes from './Header.module.css';
-import ButtonForOrder from '../../components/UI/ButtonForOrder/ButtonForOrder';
+import React from "react";
+import classes from "./Header.module.css";
+import ButtonForOrder from "../../components/UI/ButtonForOrder/ButtonOrder";
 import logo from "../../assets/Logo.png";
 
-
-const Header = ({quality,getVisModal}) => {
-
-    
-    return (
-        <div className={classes.Header}>
-        <div className={classes.Logo}>
-          <img src={logo} />
-        </div>
-        <ButtonForOrder 
-   quality={quality}
-   getVisModal={getVisModal}
-         />
+const Header = ({ QualPosOrder, setVisibMod }) => {
+  return (
+    <header className={classes.Header}>
+      <div className={classes.Logo}>
+        <img src={logo} />
       </div>
-    );
+      <ButtonForOrder QualPosOrder={QualPosOrder} setVisibMod={setVisibMod} />
+    </header>
+  );
 };
 
 export default Header;

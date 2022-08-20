@@ -12,9 +12,9 @@ const BlockForOrder = (props) => {
     
     return (
         <div className={classes.BlockOrder}>
-        <p className={classes.raiting}>{props.value.rating}</p>
-        <p className={classes.Title}> {props.value.TitleOfThing}</p>
-        <p className={classes.Price}>{props.value.Price_rub} 000 ₽</p>
+        <div className={classes.raiting}>{props.value.rating}</div>
+        <div className={classes.Title}> {props.value.TitleOfThing}</div>
+        <div className={classes.Price}>{props.value.Price_rub} 000 ₽</div>
         <img src={
               props.value.img_content==="backpack"
               ?

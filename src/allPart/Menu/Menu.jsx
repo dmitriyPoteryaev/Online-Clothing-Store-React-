@@ -11,7 +11,7 @@ const Menu = () => {
 
   return (
     <div className={classes.BlockMenu}>
-      <div className={classes.Menu}>
+      <nav className={classes.Menu}>
         {chaptersOfMenu.map((chapter,i) =>
           chapter === params.chapter ? (
             <Link
@@ -31,7 +31,7 @@ const Menu = () => {
             </Link>
           )
         )}
-      </div>
+      </nav>
     </div>
   );
 };

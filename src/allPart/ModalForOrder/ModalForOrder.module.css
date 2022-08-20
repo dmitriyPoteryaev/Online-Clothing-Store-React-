@@ -1,0 +1,102 @@
+.modalForOrder {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  font-family: "PT Sans", sans-serif;
+  overflow-y: scroll;
+}
+
+.contentOfModal {
+  display: flex;
+  width: 460px;
+  background: white;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modalForOrder.active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 0;
+}
+.HeaderModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.cross {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.SetOrder {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #59606d;
+}
+
+.ProductBasket {
+  color: #59606d;
+  font-size: 18px;
+  margin-top: 24px;
+  width: 100%;
+  height: 23px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.NothingOrder {
+  font-family: "PT Sans";
+  margin-left: 48px;
+}
+
+.TitleBasket {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.BasketAttention {
+  font-size: 22px;
+  margin-top: 24px;
+  max-width: 364px;
+}
+
+.OrderPosition {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .modalForOrder {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .HeaderModal {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .cross {
+    margin-right: 0px;
+  }
+  .OrderPosition {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .NothingOrder {
+    width: 100%;
+    margin-left: 5px;
+  }
+}

@@ -3,38 +3,37 @@ import classes from "./ModalButton.module.css";
 
 const ModalButton = ({
   children,
-  funcModChoice,
-  quantityThingForOrder,
-  visiable,
+  setVisibMod,
+
+  QualPosOrder,
+  visibMod,
+
   newOrder,
-  createNewOrder,
+  createOrder,
+
   TimeAttention,
 }) => {
   return (
     <button
-      className={classes.bottomforBackorSendOrderBlack}
+      className={classes.bottomBlack}
       onClick={() => {
-        quantityThingForOrder !== 0 && visiable
+        QualPosOrder !== 0 && visibMod
           ? !newOrder.Adress.trim() ||
             !newOrder.Phone.trim() ||
             !newOrder.Name.trim()
             ? TimeAttention()
-            : createNewOrder(newOrder)
-          : funcModChoice(false);
+            : createOrder(newOrder)
+            : setVisibMod(false);
       }}
       onMouseOver={(event) => {
-        quantityThingForOrder !== 0 && visiable
-          ? (event.currentTarget.className =
-              classes.bottomforBackorSendOrderGrey)
-          : (event.currentTarget.className =
-              classes.bottomforBackorSendOrderBlack);
+        QualPosOrder !== 0 && visibMod
+          ? (event.currentTarget.className = classes.bottomGrey)
+          : (event.currentTarget.className = classes.bottomBlack);
       }}
       onMouseOut={(event) => {
-        event.currentTarget.className === classes.bottomforBackorSendOrderGrey
-          ? (event.currentTarget.className =
-              classes.bottomforBackorSendOrderBlack)
-          : (event.currentTarget.className =
-              classes.bottomforBackorSendOrderBlack);
+        event.currentTarget.className === classes.bottomGrey
+          ? (event.currentTarget.className = classes.bottomBlack)
+          : (event.currentTarget.className = classes.bottomBlack);
       }}
     >
       {children}

@@ -7,10 +7,12 @@ import classes from './Form.module.css';
 
 
 const Form = ({
-  quantityThingForOrder,
-  visiable,
-  ThingForOrderForm,
-  setPositionForOrder,
+  QualPosOrder,
+  PosOrder,
+
+  visibMod,
+
+  setPosOrder,
   setGoodBye
 }) => {
   const [FullInfo, setFullInfo] = useState({
@@ -21,9 +23,9 @@ const Form = ({
 
   const [attention, setAttention] = useState(true);
 
-  const newOrder = { ...FullInfo, id: Date.now(), ThingForOrderForm };
+  const newOrder = { ...FullInfo, id: Date.now(), PosOrder };
 
-  async function createNewOrder(data) {
+  async function createOrder(data) {
     await ContentServies.PostQuery(data);
 
     setFullInfo({
@@ -32,7 +34,7 @@ const Form = ({
       Adress: "",
     });
     setGoodBye(false)
-    setPositionForOrder("");
+    setPosOrder("");
 
   }
 
@@ -44,10 +46,11 @@ const Form = ({
     }, 3000);
   }
 
+
   return (
     <div>
       <form>
-      <Attention visiable={attention} />
+      <Attention attention={attention} />
         <input
           type="text"
           placeholder="Ваше имя"
@@ -86,10 +89,12 @@ const Form = ({
         ></input>
       </form>
       <ModalButton
-        createNewOrder={createNewOrder}
+        createOrder={createOrder}
         newOrder={newOrder}
-        quantityThingForOrder={quantityThingForOrder}
-        visiable={visiable}
+        
+        QualPosOrder={QualPosOrder}
+        visibMod={visibMod}
+
         setFullInfo={setFullInfo}
         TimeAttention={TimeAttention}
       >

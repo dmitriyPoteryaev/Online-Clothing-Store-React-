@@ -1,4 +1,4 @@
-.ButtonForOrder {
+.ButtonOrder {
   position: relative;
   margin-top: 10px;
   margin-right: 108px;
@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.imgButtonForOrder {
+.imgButtonOrder {
   width: 40px;
   height: 30px;
 }
@@ -27,7 +27,7 @@
   top: -4px;
 }
 
-.qualityOfOrder {
+.QualPosOrder {
   font-family: "PT Sans";
   text-align: center;
   color: white;
