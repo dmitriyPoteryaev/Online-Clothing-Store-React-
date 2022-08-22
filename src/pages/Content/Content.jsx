@@ -38,7 +38,7 @@ function Content() {
 
 
   return (
-    <div>
+    <div className={classes.App}>
       <Header
         QualPosOrder={PosOrder.length}
         setVisibMod={setVisibMod}

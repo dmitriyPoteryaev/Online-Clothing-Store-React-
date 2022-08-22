@@ -1,26 +1,63 @@
-.InfoAboutClient, .AttenClient{
-    width:95%;
-    height:50px;
-    border-radius:5px;
+.BlockModule {
+    position: relative;
+    height: 80px;
+
+}
+
+.InfoAboutClient,
+.AttenClient {
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
     border-style: none;
     font-size: 16px;
     background-color: #F8F8F8;
     margin-top: 16px;
-    margin-bottom: 16px;
-    color:black;
-    padding-top:14px;
-    padding-bottom:14px;
-    padding-left:14px;
-    
+    margin-bottom: 4px;
+    color: black;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 50px;
+
+
+}
+
+.AttenClient {
+
+    border: red 0.5px solid;
+}
+
+.AttentSign {
+    height: 45px;
+    width: 10%;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    margin: 0px;
+}
+
+.AttentTitle {
+    display: block;
+    font-family: "PT Sans", 'sans-serif';
+    color: red;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.Hide_Atent {
+    display: none;
+
+}
+
+
+@media (max-width: 450px) {
+    .InfoAboutClient, .AttenClient {
+        width: 100%;
     }
+    .AttentSign {
+        right: 0px;
 
-    .AttenClient{
-
-        border: red 3px solid;
     }
-
-
-    @media (max-width: 450px) {
-        .InfoAboutClient  {
-            width:100%;
-        }}
+}

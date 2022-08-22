@@ -27,7 +27,7 @@ const BlockForOrder = (props) => {
               shirts
             } 
          className={classes.content_picture}
-           alt={'PictureOfSomethinContent'}/>
+           alt={'PicContent'}/>
         <img src={starForRaiting}  className={classes.img_starForRaiting}  alt={'PictureForRaiting'}/>
         <img
          src={new_trash} 

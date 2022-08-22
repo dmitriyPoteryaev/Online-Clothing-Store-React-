@@ -1,8 +1,6 @@
 import Content from "./pages/Content/Content";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import About from "./pages/About/About";
+import Greeting from "./pages/Greeting/Greeting";
 import Navbar from "./components/UI/Navbar/Navbar";
 
 
@@ -13,11 +11,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar/>
+      {/* <Navbar/> */}
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Greeting />} />
           <Route exact path={"/louis_Vuitton/:chapter"} element={<Content />} />
-          <Route path="*" element={<About />} />
+          <Route path="*" element={<Greeting />} />
         </Routes>
       </BrowserRouter>
     </div>

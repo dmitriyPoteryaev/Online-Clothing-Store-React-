@@ -12,8 +12,8 @@
 .raiting {
   position: absolute;
   top: 20px;
-  left: 36px;
-  color: #f2c94c;
+  left: 27px;
+  color: black;
   font-weight: 700;
   font-size: 15px;
   margin: 0;
@@ -24,7 +24,7 @@
   position: absolute;
   bottom: 40px;
   left: 16px;
-  color: #59606d;
+  color: black;
   font-size: 14px;
   height: 18px;
   font-weight: 800;
@@ -48,7 +48,7 @@
 
 .img_starForRaiting {
   position: absolute;
-  left: 15px;
+  left: 6px;
   top: 20px;
   margin: 0;
   padding: 0;
@@ -57,7 +57,7 @@
 .ForOrder {
   position: absolute;
   right: 18px;
-  top: 17px;
+  bottom: 17px;
   width: 30px;
   height: 30px;
   margin: 0;
@@ -76,6 +76,9 @@
 @media (max-width: 1600px) {
   .blockForContent {
     width: calc(45% - 12px);
+  }
+  .ForOrder {
+    top: 17px;
   }
 }
 
