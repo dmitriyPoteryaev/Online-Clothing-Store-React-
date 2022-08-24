@@ -30,6 +30,25 @@ const ModalForOrder = ({
   };
 
 
+  disableScroll()
+
+
+  function disableScroll(){
+
+    let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px'
+
+    console.log(paddingOffset);
+
+    console.log(window)
+    
+
+
+
+  }
+
+ 
+
+
   return (
     <div className={StyleModal.join(" ")}
       onClick={() => { setVisibMod(false); setGoodBye(true) }}>

@@ -38,13 +38,9 @@
 /* mobile */
 
 @media (max-width: 1000px) {
-  .ButtonForOrder {
+  .ButtonOrder {
     margin-right: 10px;
   }
 }
 
-@media (max-width: 280px) {
-  .ButtonForOrder {
-    margin-right: 10px;
-  }
-}
+

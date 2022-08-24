@@ -8,13 +8,18 @@
   display: none;
   font-family: "PT Sans", sans-serif;
   overflow-y: scroll;
+ 
+
 }
 
 .contentOfModal {
   display: flex;
+  flex-wrap: wrap;
   width: 460px;
   background: white;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+  padding-right: 17px;
+
 }
 
 .modalForOrder.active {
