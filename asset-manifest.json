@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Online-Clothing-Store-React-/static/css/main.a7f69498.css",
-    "main.js": "/Online-Clothing-Store-React-/static/js/main.c485c9cd.js",
+    "main.css": "/Online-Clothing-Store-React-/static/css/main.ec428a49.css",
+    "main.js": "/Online-Clothing-Store-React-/static/js/main.fef049f1.js",
     "static/media/full_screen_logo.jpg": "/Online-Clothing-Store-React-/static/media/full_screen_logo.07a1bd1b5f5f628f4a81.jpg",
     "static/media/backpack.png": "/Online-Clothing-Store-React-/static/media/backpack.1bdb743fe9ecec3cfe7f.png",
     "static/media/new_shop_black.png": "/Online-Clothing-Store-React-/static/media/new_shop_black.3bfc93de78cb7ef83808.png",
     "static/media/new_shop.png": "/Online-Clothing-Store-React-/static/media/new_shop.aa30ae2138166239b593.png",
     "index.html": "/Online-Clothing-Store-React-/index.html",
     "static/media/AttentModal.svg": "/Online-Clothing-Store-React-/static/media/AttentModal.a506f702a7e945a45721d14d6289eb98.svg",
-    "main.a7f69498.css.map": "/Online-Clothing-Store-React-/static/css/main.a7f69498.css.map",
-    "main.c485c9cd.js.map": "/Online-Clothing-Store-React-/static/js/main.c485c9cd.js.map"
+    "main.ec428a49.css.map": "/Online-Clothing-Store-React-/static/css/main.ec428a49.css.map",
+    "main.fef049f1.js.map": "/Online-Clothing-Store-React-/static/js/main.fef049f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7f69498.css",
-    "static/js/main.c485c9cd.js"
+    "static/css/main.ec428a49.css",
+    "static/js/main.fef049f1.js"
   ]
 }
