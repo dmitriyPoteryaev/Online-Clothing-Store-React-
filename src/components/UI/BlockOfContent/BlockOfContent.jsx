@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import classes from "./BlockOfContent.module.css";
-import starForRaiting from "../../assets/starForRaiting.png";
-import backpack from "../../assets/backpack.png";
-import new_shop from "../../assets/new_shop.png";
-import new_shop_black from "../../assets/new_shop_black.png";
-import shirts from "../../assets/shirts.png";
-import leatherJacket from "../../assets/leatherJacket.png";
-import CheckTitle from "../../utilits/CheckTitle";
+import starForRaiting from "../../../assets/UI/starForRaiting.png";
+import backpack from "../../../assets/content/backpack.png";
+import new_shop from "../../../assets/UI/new_shop.png";
+import new_shop_black from "../../../assets/UI/new_shop_black.png";
+import shirts from "../../../assets/content/shirts.png";
+import leatherJacket from "../../../assets/content/leatherJacket.png";
+import CheckTitle from "../../../utilits/CheckTitle";
 
 const BlockOfContent = ({
   value,

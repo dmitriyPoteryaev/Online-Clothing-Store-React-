@@ -1,10 +1,10 @@
 import React from "react";
 
-import ok from "../../../assets/ok.png";
+import ok from "../../../assets/modal/ok.png";
 
 import classes from "./GoodBye.module.css";
 
-import cross from "../../../assets/cross.png";
+import cross from "../../../assets/modal/cross.png";
 
 const GoodBye = ({ setGoodBye }) => {
   return (

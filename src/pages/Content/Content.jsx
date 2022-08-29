@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import BlockOfContent from "../../components/BlockOfContent/BlockOfContent";
+import BlockOfContent from "../../components/UI/BlockOfContent/BlockOfContent";
 import classes from "./Content.module.css";
 import "../../style/style.css";
-import ModalForOrder from "../../allPart/ModalForOrder/ModalForOrder";
+import ModalForOrder from "../../components/ModalForOrder/ModalForOrder";
 
-import Header from "../../allPart/Header/Header";
-import Sorting from "../../allPart/Sorting/Sorting";
+import Header from "../../components/Header/Header";
+import Sorting from "../../components/Sorting/Sorting";
 import { useSortingContent } from "../../customHooks/useSortingContent";
-import Menu from "../../allPart/Menu/Menu";
+import Menu from "../../components/Menu/Menu";
 import { useFetching } from "../../customHooks/useFetching";
 import Loader from "../../components/UI/Loader/Loader";
 import { ContentServies } from "../../API/ContentServies";

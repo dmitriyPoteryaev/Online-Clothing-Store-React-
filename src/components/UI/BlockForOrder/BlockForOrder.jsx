@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './BlockForOrder.module.css';
-import starForRaiting from '../../../assets/starForRaiting.png';
-import new_trash from '../../../assets/trash.png';
-import new_trash_black from '../../../assets/new_trash_black.png';
-import backpack from '../../../assets/backpack.png';
-import shirts from '../../../assets/shirts.png';
-import leatherJacket from '../../../assets/leatherJacket.png';
+import starForRaiting from '../../../assets/UI/starForRaiting.png';
+import new_trash from '../../../assets/UI/new_trash.png';
+import new_trash_black from '../../../assets/UI/new_trash_black.png';
+import backpack from '../../../assets/content/backpack.png';
+import shirts from '../../../assets/content/shirts.png';
+import leatherJacket from '../../../assets/content/leatherJacket.png';
 
 const BlockForOrder = (props) => {
 

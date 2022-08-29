@@ -1,5 +1,5 @@
 import React from 'react';
-import exclamation from "../../assets/exclamation_mark.png";
+import exclamation from "../../assets/modal/exclamation_mark.png";
 import classes from"./Attention.module.css"
 
 

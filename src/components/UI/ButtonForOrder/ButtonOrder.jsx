@@ -1,5 +1,5 @@
 import React from 'react';
-import BigButtonOrder from "../../../assets/BigPitureButtonForOrder.png";
+import BigButtonOrder from "../../../assets/Logo/header/BigPitureButtonForOrder.png";
 import classes from './ButtonOrder.module.css';
 
 const ButtonOrder = ({QualPosOrder,setVisibMod}) => {

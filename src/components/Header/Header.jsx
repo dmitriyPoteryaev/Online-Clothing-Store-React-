@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Header.module.css";
-import ButtonForOrder from "../../components/UI/ButtonForOrder/ButtonOrder";
-import logo from "../../assets/Logo.png";
+import ButtonForOrder from "../UI/ButtonForOrder/ButtonOrder";
+import logo from "../../assets/Logo/header/Logo.png";
 
 const Header = ({ QualPosOrder, setVisibMod }) => {
   return (

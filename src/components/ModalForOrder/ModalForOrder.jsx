@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./ModalForOrder.module.css";
-import GoodBye from "../../components/UI/GoodBye/GoodBye";
-import cross from "../../assets/cross.png";
-import BlockForOrder from "../../components/UI/BlockForOrder/BlockForOrder";
+import GoodBye from "../UI/GoodBye/GoodBye";
+import cross from "../../assets/modal/cross.png";
+import BlockForOrder from "../UI/BlockForOrder/BlockForOrder";
 import Form from "../Form/Form";
-import ModalButton from "../../components/UI/ModalButton/ModalButton";
+import ModalButton from "../UI/ModalButton/ModalButton";
 
 const ModalForOrder = ({
   visibMod,
@@ -15,7 +15,7 @@ const ModalForOrder = ({
 
   PosOrder,
   setPosOrder,
-  QualPosOrder
+  QualPosOrder,
 }) => {
   const StyleModal = [classes.modalForOrder];
 
@@ -29,30 +29,14 @@ const ModalForOrder = ({
     );
   };
 
-
-  disableScroll()
-
-
-  function disableScroll(){
-
-    let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px'
-
-    console.log(paddingOffset);
-
-    console.log(window)
-    
-
-
-
-  }
-
- 
-
-
   return (
-    <div className={StyleModal.join(" ")}
-      onClick={() => { setVisibMod(false); setGoodBye(true) }}>
-
+    <div
+      className={StyleModal.join(" ")}
+      onClick={() => {
+        setVisibMod(false);
+        setGoodBye(true);
+      }}
+    >
       <div
         className={classes.contentOfModal}
         onClick={(event) => event.stopPropagation()}
@@ -68,9 +52,7 @@ const ModalForOrder = ({
                   onClick={() => setVisibMod(false)}
                 />
               </div>
-              <div className={classes.ProductBasket}>
-                Товары в корзине
-              </div>
+              <div className={classes.ProductBasket}>Товары в корзине</div>
               {PosOrder.map((contentForOrder) => (
                 <BlockForOrder
                   value={contentForOrder}
@@ -82,9 +64,7 @@ const ModalForOrder = ({
               <Form
                 QualPosOrder={QualPosOrder}
                 PosOrder={PosOrder}
-
                 visibMod={visibMod}
-                
                 setPosOrder={setPosOrder}
                 setGoodBye={setGoodBye}
               />
@@ -102,9 +82,7 @@ const ModalForOrder = ({
               <div className={classes.BasketAttention}>
                 Пока что вы ничего не добавли в корзину
               </div>
-              <ModalButton
-                setVisibMod={setVisibMod}
-              >
+              <ModalButton setVisibMod={setVisibMod}>
                 Перейти к выбору
               </ModalButton>
             </div>

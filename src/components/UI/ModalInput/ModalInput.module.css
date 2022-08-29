@@ -1,0 +1,23 @@
+.InfoAboutClient,
+.AttenClient {
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 16px;
+    background-color: #F8F8F8;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: black;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 50px;
+
+
+}
+
+.AttenClient {
+
+    border: red 0.5px solid;
+}
